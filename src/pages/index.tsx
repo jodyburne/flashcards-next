@@ -14,12 +14,38 @@ const Home: NextPage = () => {
       </Head>
       <Center h="100vh">
         <VStack spacing={8}>
-          <Text>Choose lang</Text>
+          <Text color="white">Choose language...</Text>
           <Link href="/cards/french" passHref>
-            <Heading>French</Heading>
+            <Heading
+              backgroundClip="text"
+              animation="language 2s infinite alternate"
+              sx={{
+                "background-clip": "text",
+              }}
+              backgroundImage="linear-gradient(to right, blue 20%, white 50%, red 80%)"
+              _hover={{
+                animationPlayState: "paused",
+                cursor: "pointer",
+              }}
+            >
+              French
+            </Heading>
           </Link>
           <Link href="/cards/japanese" passHref>
-            <Heading>Japanese</Heading>
+            <Heading
+              animation="language 2s infinite alternate"
+              sx={{
+                "background-clip": "text",
+              }}
+              backgroundClip="text"
+              backgroundImage="linear-gradient(to right, white 20%, red 50%, white 80%)"
+              _hover={{
+                animationPlayState: "paused",
+                cursor: "pointer",
+              }}
+            >
+              Japanese
+            </Heading>
           </Link>
         </VStack>
       </Center>

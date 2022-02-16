@@ -12,11 +12,7 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-@keyframes color-change {
+@keyframes success {
   0% {
     color: white;
   }
@@ -25,5 +21,13 @@ a {
   }
   100% {
     color: white;
+  }
+}
+@keyframes language {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
   }
 }

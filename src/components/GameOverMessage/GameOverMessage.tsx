@@ -7,7 +7,7 @@ const GameOverMessage: React.VFC<{
   return failedCards ? (
     <Button onClick={() => getFailedCards()}>Redo failed cards?</Button>
   ) : (
-    <Heading animation={"color-change 2s infinite"}>Yay!</Heading>
+    <Heading animation={"success 2s infinite"}>Yay!</Heading>
   );
 };
 

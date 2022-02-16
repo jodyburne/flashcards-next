@@ -79,7 +79,9 @@ const Game: NextPage = () => {
       <Center h="95vh" justifyContent="space-around" flexDir="column">
         {!isGameOver && (
           <Card>
-            <Heading>{shuffledCards[currentCardIndex]?.word}</Heading>
+            <Heading textAlign="center">
+              {shuffledCards[currentCardIndex]?.word}
+            </Heading>
           </Card>
         )}
 
@@ -113,6 +115,7 @@ const Game: NextPage = () => {
       {isGameOver && (
         <Link passHref href="/">
           <Text
+            color="white"
             textAlign="center"
             _hover={{
               cursor: "pointer",
